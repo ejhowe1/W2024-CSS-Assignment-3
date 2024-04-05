@@ -1,0 +1,294 @@
+@font-face {
+    font-family: "BebasNeue";
+    src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url('../fonts/Lobster/Lobster-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Anton";
+    src: url('../fonts/Anton/Anton-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffcc00; /* Reese's Pieces orange */
+}
+
+/* Header styling */
+header {
+    background-color: #330000; /* Reese's Pieces brown */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    margin:0; /* Centers the logo horizontally */
+    height: 100px;
+    width: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    font-family: 'BebasNeue';
+    margin: 20px;
+    color: #ffcc00; /* Reese's Pieces orange */
+    text-decoration: none;
+    font-size: 26px;
+    transition: 0.3s;
+    cursor: pointer; /* Add cursor on hover */
+}
+
+.navbar ul li a:hover {
+    color: #ff6600; /* Lighter orange on hover */
+    font-size: 28px;
+    transform: scale(1.1); /* Scale the text on hover */
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-family: 'BebasNeue';
+    width: 400px; /* Adjust the width as needed */
+}
+
+/* Section one styling */
+.product {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    margin: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Box shadow for the popped out effect */
+}
+
+.product-img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.product-img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+
+.product h2 {
+    font-family: 'Lobster';
+    text-align: center;
+    font-size: 30px;
+}
+
+.product p {
+    text-transform: uppercase;
+    font-family: 'Anton';
+    text-align: center;
+    font-size: 18px;
+}
+
+.product button {
+    background-color: #ffcc00; /* Reese's Pieces orange */
+    color: #330000; /* Reese's Pieces brown */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'BebasNeue', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.product button:hover {
+    background-color: #ff6600; /* Lighter orange on hover */
+}
+
+/* Section two styling */
+.info {
+    display: flex;
+    justify-content: space-between; /* Align items with space between them */
+    background-color: #f7f7f7; /* Light gray background */
+    padding: 20px;
+    margin: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Box shadow for the popped out effect */
+}
+
+.info-content {
+    flex: 1; /* Occupy remaining space */
+}
+
+.info h1 {
+    font-family: 'Lobster'; /* Use Lobster font */
+    color: #330000; /* Reese's Pieces brown */
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.info ul {
+    list-style-type: disc; /* Use bullet points for list items */
+    padding-left: 20px; /* Add some indentation */
+}
+
+.info li {
+    font-family: 'Anton';
+    font-size: 18px;
+    line-height: 1.5; /* Add some spacing between list items */
+    margin-bottom: 10px; /* Add some space between list items */
+}
+
+.info img {
+    height: auto;
+    margin-left: 10px;
+    height: 400px;
+    width: 400px;
+    max-width: 50%; /* Limit the width of the image */
+    border-radius: 10px;
+}
+
+/* Section three styling */
+/* CSS for Nutrition Facts Label */
+.nutrition {
+    background-color: #f7f7f7; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Box shadow for the popped out effect */
+    max-width: 800px; /* Limit the maximum width of the section */
+    margin: 0 auto; /* Center the section horizontally */
+    margin-bottom: 100px;
+}
+
+.nutrition h1 {
+    font-family: 'Lobster'; /* Use Lobster font */
+    color: #330000; /* Reese's Pieces brown */
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.nutrition p, .nutrition table {
+    font-family: 'Anton';
+    margin-bottom: 10px; /* Add some space between paragraphs and table */
+}
+
+.nutrition table {
+    width: 100%; /* Make the table fill the entire width of the section */
+    border-collapse: collapse; /* Collapse the borders between table cells */
+}
+
+.nutrition table td {
+    padding: 8px; /* Add padding to table cells */
+    border: 1px solid #ddd; /* Add borders to table cells */
+}
+
+.nutrition table td:first-child {
+    font-family: 'Anton';
+    text-align: left; /* Align text in the first column to the left */
+}
+
+.nutrition table td:nth-child(2) {
+    font-family: 'Anton';
+    text-align: center; /* Align text in the second column to the right */
+}
+
+.nutrition table td:last-child {
+    font-family: 'Anton';
+    text-align: center; /* Align text in the last column to the center */
+}
+
+/*Section three styling*/
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the footer */
+footer {
+    background-color: #330000; /* Reese's Pieces brown */
+    color: #ffcc00; /* Reese's Pieces orange */
+    padding: 20px; /* Padding around footer content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute content evenly */
+    align-items: center; /* Vertically center items */
+}
+
+/* Style for the logo */
+.footerLogo {
+    display: block;
+    margin:0; /* Centers the logo horizontally */
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+    background-color: #f7f7f7; /* Light gray background */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Box shadow for the popped out effect */
+}
+
+/* Style for company information */
+.company-info {
+    font-family: 'Lobster';
+    max-width: 300px; /* Limit the width */
+}
+
+/* Style for the quick contact form */
+.quick-contact-form {
+    max-width: 300px; /* Limit the width */
+}
+
+/* Style for form inputs and button */
+.quick-contact-form input,
+.quick-contact-form textarea,
+.quick-contact-form button {
+    font-family: 'BebasNeue';
+    width: 100%; /* Make them fill the container */
+    margin-bottom: 10px; /* Add space between elements */
+    padding: 8px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ffcc00; /* Reese's Pieces orange border */
+    background-color: #fff; /* White background */
+    color: #330000; /* Reese's Pieces brown text color */
+}
+
+/* Style for form button */
+.quick-contact-form button {
+    background-color: #ffcc00; /* Reese's Pieces orange background color */
+    color: #330000; /* Reese's Pieces brown text color */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+/* Style for form button on hover */
+.quick-contact-form button:hover {
+    background-color: #ff6600; /* Lighter orange on hover */
+}
+
+.quick-contact-form h3 {
+    font-family: 'Lobster';
+}
